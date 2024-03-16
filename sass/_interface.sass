@@ -1,0 +1,115 @@
+.container
+    width: 1340px
+    margin: auto
+@media (max-width: 1399px)
+    .container
+        width: 1140px
+        margin: auto
+@media (max-width: 1199px)
+    .container
+        width: 940px
+        margin: auto
+@media (max-width: 991px)
+    .container
+        width: 740px
+        margin: auto
+@media (max-width: 767px)
+    .container
+        width: 550px
+        margin: auto
+@media (max-width: 575px)
+    .container
+        width: 100%
+        padding-left: 20px
+        padding-right: 20px
+        margin: auto
+.footer
+    padding-top: 17px
+    padding-bottom: 52px
+    &__bottom
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding-top: 47px
+        border-top: 1px solid rgb(114, 192, 79)
+    &__polit
+        color: #fff
+        font-size: 16px
+        line-height: 20px
+        text-decoration: none
+        position: relative
+        &::after
+            content: ""
+            display: block
+            width: 100%
+            height: 1px
+            background: #fff
+            position: absolute
+            bottom: 2px
+            left: 0
+    &__autor
+        color: #fff
+        font-size: 16px
+        line-height: 20px
+        text-decoration: none
+    &__wrap
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+        position: relative
+        padding-bottom: 68px
+    &__top
+        position: absolute
+        bottom: 37px
+        right: 0
+        width: 52px
+        height: 52px
+        border: 1px solid rgb(114, 192, 79)
+        border-radius: 79px
+        display: flex
+        align-items: center
+        justify-content: center
+    &__left
+        padding-top: 40px
+    &__soc
+        display: flex
+        a
+            width: 128px
+            height: 128px
+            display: flex
+            align-items: center
+            justify-content: center
+            border: 1px solid rgb(255, 255, 255)
+            border-radius: 50%
+            color: rgb(255, 255, 255)
+            font-size: 16px
+            line-height: 20px
+            text-decoration: none
+    &__phone
+        display: block
+        color: rgb(255, 255, 255)
+        font-family: Unbounded
+        font-size: 35px
+        font-weight: 500
+        line-height: 132.86%
+        text-decoration: none
+        text-transform: uppercase
+        margin-bottom: 47px
+    &__adres
+        display: block
+        margin-bottom: 23px
+        color: rgb(255, 255, 255)
+        font-size: 16px
+        line-height: 20px
+        text-decoration: none
+    &__email
+        display: block
+        margin-bottom: 61px
+        color: rgb(255, 255, 255)
+        font-size: 16px
+        line-height: 20px
+        text-decoration: none
+    &__copy
+        color: rgb(255, 255, 255)
+        font-size: 16px
+        line-height: 20px
