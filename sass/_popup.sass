@@ -1,0 +1,100 @@
+.overlay
+    width: 100vw
+    height: 100vh
+    position: fixed
+    top: 0
+    left: 0
+    background-color: rgba(20, 28, 38, 0.9)
+    z-index: 11
+    display: none
+    justify-content: center
+    align-items: center
+    &-active
+        display: flex
+.popup
+    &__close
+        position: absolute
+        right: 50%
+        display: flex
+        width: 40px
+        height: 40px
+        align-items: center
+        justify-content: center
+        top: -70px
+        margin-right: -20px
+        rect
+            transition: all 0.3s
+        &:hover
+            cursor: pointer
+            rect
+                fill: #72C04F
+    &-call
+        width: 1340px
+        max-width: 95%
+        position: relative
+        .call
+            &__check
+                input
+                    &+span
+                        border: 1px solid #141c26
+                        &::after
+                            background: #141c26
+                p
+                    color: #141c26
+                    a
+                        color: #141c26
+            &__form
+                background: #fff
+                input
+                    color: #141c26
+                    border: 1px solid #141c26
+                    &::placeholder
+                        color: #141c26
+                button
+                    background: #72c04f
+.thx
+    background: #8699b4 url("../img/thx.svg")
+    border-radius: 30px
+    width: 550px
+    max-width: 95%
+    position: relative
+    padding: 75px
+    text-align: center
+    font-family: "Unbounded", sans-serif
+    font-weight: 400
+    font-size: 30px
+    line-height: 133%
+    text-transform: uppercase
+    text-align: center
+    color: #fff
+@media (max-width: 1399px)
+    .popup
+        &-call
+            .call__cloud
+                width: 250px
+                left: 300px
+                img
+                    max-width: 100%
+@media (max-width: 1199px)
+    .overlay
+        &-call
+            align-items: flex-start
+            padding: 90px 0
+            overflow-y: scroll
+    .popup
+        &-call
+            .call__cloud
+                left: auto
+                top: 0
+@media(max-width: 575px)
+    .overlay
+        align-items: flex-start
+        padding: 90px 0
+        overflow-y: scroll
+    .popup__close
+        right: 0px
+        margin-right: 0
+    .popup
+        &-call
+            .call__cloud
+                width: 200px
